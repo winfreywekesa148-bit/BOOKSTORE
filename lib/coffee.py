@@ -1,18 +1,21 @@
 #coffee class
 
 class Coffee:
+    VALID_SIZES = ["Small", "Medium", "Large"]
+
     def __init__(self, size, price):
-        size = size.lower()
-        if size not in self.VALID_SIZES:
-            raise ValueError("size must be small, medium, or large")
-
-        self.size = size
+        self._size = size
         self.price = price
-    
-        sizes = ["small", "medium", "large"]
 
-        if size in sizes:
-            print(f"You have selected a {size} coffee.")
+    @property 
+    def size(self):
+        return self._size
+
+    @size.setter
+    def size(self, value):  
+        if value in self.VALID_SIZES:
+            self._size = value
+        
         else:
             print(f"size must be small, medium, or large")
 
