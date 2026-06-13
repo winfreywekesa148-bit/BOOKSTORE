@@ -4,7 +4,7 @@ class Coffee:
     VALID_SIZES = ["Small", "Medium", "Large"]
 
     def __init__(self, size, price):
-        self._size = size
+        self._size = size.lower()
         self.price = price
 
     @property 
@@ -20,14 +20,14 @@ class Coffee:
             print(f"size must be Small, Medium, or Large")
 
         #methods for tip
-    def add_tip(self, tip_amount):
-        tip_amount =+ 1.00
+    def add_tip(self, tip):
+        tip =+ 1.00
 
-        if tip_amount > 0:
-            print(f"total price: ${self.price + tip_amount:.2f}")
+        if tip > 0:
+            print(f"total price: ${self.price + tip:.2f}")
         else:
             print(f"total price: ${self.price:.2f}")
-            return tip_amount
+            return tip
 
 
         
