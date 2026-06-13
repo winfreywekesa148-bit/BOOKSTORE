@@ -10,11 +10,11 @@ class Book:
         else:
                self.title = title
         
-        #page_count requires user input
-        if not self.page_count:
-            raise ValueError("Page count is required.")
-        else:
-            self.page_count = page_count
+    def page_count(self, page):
+         if isinstance(page, int):
+              self.page_count = page
+         else:
+              print("page_count must be in integer")
 
 #method to turn pages
     def turn_page(self):
