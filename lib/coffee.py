@@ -20,7 +20,7 @@ class Coffee:
             print(f"size must be Small, Medium, or Large")
 
         #methods for tip
-    def add_tip(self, tip):
+    def tip(self, tip):
         tip =+ 1.00
 
         if tip > 0:
