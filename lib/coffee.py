@@ -4,7 +4,7 @@ class Coffee:
     VALID_SIZES = ["small", "medium", "large"]
 
     def __init__(self, size, price):
-        self._size = size.lower()
+        self._size = size
         self.price = price
 
     @property 
