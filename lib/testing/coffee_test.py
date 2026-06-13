@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from LIB.coffee import Coffee
+from lib.coffee import Coffee
 
 import io
 import sys
