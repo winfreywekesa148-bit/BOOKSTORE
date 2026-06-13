@@ -1,10 +1,10 @@
 #coffee class
 
 class Coffee:
-    VALID_SIZES = ["small", "medium", "large"]
+    VALID_SIZES = ["Small", "Medium", "Large"]
 
     def __init__(self, size, price):
-        self._size = size
+        self._size = size.lower()
         self.price = price
 
     @property 
@@ -17,7 +17,7 @@ class Coffee:
             self._size = value
         
         else:
-            print(f"size must be small, medium, or large")
+            print(f"size must be Small, Medium, or Large")
 
         #methods for tip
     def add_tip(self, tip_amount):
