@@ -8,13 +8,11 @@ class Coffee:
 
         self.size = size
         self.price = price
-        
-        size_input = input("Please enter the coffee size (small, medium, large): ").lower()
-        size = size_input
+    
         sizes = ["small", "medium", "large"]
 
-        if size_input in sizes:
-            print(f"You have selected a {size_input} coffee.")
+        if size in sizes:
+            print(f"You have selected a {size} coffee.")
         else:
             print(f"size must be small, medium, or large")
 

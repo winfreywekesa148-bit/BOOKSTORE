@@ -8,15 +8,13 @@ class Book:
         if not self.title:
             raise ValueError("Title is required.")
         else:
-            user_input = input("Please enter the book title: ")
-            self.title = user_input
+               self.title = title
         
         #page_count requires user input
         if not self.page_count:
             raise ValueError("Page count is required.")
         else:
-            user_input = input("Please enter the page count: ")
-            self.page_count = int(user_input)
+            self.page_count = page_count
 
 #method to turn pages
     def turn_page(self):
