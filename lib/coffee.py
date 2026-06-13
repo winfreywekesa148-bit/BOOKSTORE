@@ -20,14 +20,8 @@ class Coffee:
             print(f"size must be Small, Medium, or Large")
 
         #methods for tip
-    def tip(self, tip):
-        tip =+ 1.00
-
-        if tip > 0:
-            print(f"total price: ${self.price + tip:.2f}")
-        else:
-            print(f"total price: ${self.price:.2f}")
-            return tip
-
+    def tip(self):
+        print("This coffee is great, here’s a tip!")
+        self.price += 1
 
         
